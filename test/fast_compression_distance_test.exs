@@ -8,7 +8,7 @@ defmodule FastCompressionDistanceTest do
 
     target = subject
 
-    {:ok, {result, metatata}} = FastCompressionDistance.compare(subject, target)
+    {:ok, {result, _metatata}} = FastCompressionDistance.compare(subject, target)
 
     assert result == 1.0
   end
@@ -20,7 +20,7 @@ defmodule FastCompressionDistanceTest do
     target =
       "Morbi ultrices dolor sem, in vulputate neque lobortis nec. Quisque eleifend suscipit velit at placerat. Sed pharetra diam ullamcorper nibh sodales, eu iaculis arcu mollis. Vivamus commodo nulla ac eros euismod, quis cursus sem congue. Donec viverra sem id lacus dictum, ut cursus lectus condimentum. Quisque eu vulputate ante. Vivamus posuere, eros aliquam sagittis euismod, risus augue tincidunt mi, sit amet congue massa nisl a odio. Nullam facilisis odio commodo tortor ultrices, finibus facilisis magna ullamcorper. Aliquam erat volutpat. Duis auctor pharetra metus et dignissim. Mauris sed lacus vel dolor maximus tincidunt. Aenean semper quam id dapibus efficitur. Donec commodo gravida ultrices. Etiam vulputate commodo lectus eget dapibus. In pellentesque et dui id cursus. Pellentesque condimentum est libero, in rutrum arcu laoreet quis."
 
-    {:ok, {result, metatata}} = FastCompressionDistance.compare(subject, target)
+    {:ok, {result, _metatata}} = FastCompressionDistance.compare(subject, target)
 
     assert result == 0.5736196319018405
   end
